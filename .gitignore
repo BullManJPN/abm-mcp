@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+.DS_Store
+*.pem
+*.p8
+*.cer
+audit.jsonl
+.env
+*.bak
+.DS_Store

@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "abm-mcp"
+version = "0.1.0"
+description = "Apple Business API を Claude から操作する MCP サーバー（検証用）"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=2.0,<3",
+    "requests>=2.31",
+    "PyJWT[crypto]>=2.8",
+]
+
+[project.scripts]
+abm-mcp = "abm_mcp.server:main"
+abm-mcp-smoke = "abm_mcp.smoke:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
